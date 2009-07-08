@@ -3,7 +3,7 @@ Contributors: Lentil
 Donate link: http://www.theschierers.net/blog/
 Tags: Gallery2, image block, plugin, widget 
 Requires at least: 2.5.1?
-Tested up to: 2.6.2
+Tested up to: 2.8
 Stable tag: trunk
 
 Widget to display a Gallery 2 (not WPG2!) Image Block in Wordpress sidebar

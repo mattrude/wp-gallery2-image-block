@@ -26,12 +26,12 @@ function widget_G2_ImageBlock_init() {
   function widget_G2_ImageBlock_options() {
 	return array(
 	  'Title' => "Daily Image",
-      'Gallery URL' => "http://putyourwebsitehere/gallery",
+      'Gallery URL' => "http://localhost/gallery",
       'g2_blocks' => "dailyImage",
       'g2_show' => "title|date",
 	  'g2_itemId' => "",
 	  'g2_maxSize' => "",
-	  'g2_exactSize' => "",
+	  'g2_exactSize' => "200",
 	  'link' => "",
 	  'linkTarget' => ""
     );
