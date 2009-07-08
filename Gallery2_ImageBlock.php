@@ -15,6 +15,13 @@ Thanks to all who came before who I stole code and comments from (particularly M
 
 // Put functions into one big function we'll call at the plugins_loaded
 // action. This ensures that all required plugin functions are defined.
+function sanitize($string) {
+    if (get_magic_quotes_gpc()) {
+        $string = stripslashes($string);
+    }
+    return $string;
+}
+
 function widget_G2_ImageBlock_init() {
   // Check for the required plugin functions. This will prevent fatal
   // errors occurring when you deactivate the dynamic-sidebar plugin.
@@ -26,7 +33,7 @@ function widget_G2_ImageBlock_init() {
   function widget_G2_ImageBlock_options() {
 	return array(
 	  'Title' => "Daily Image",
-      'Gallery URL' => "http://putyourwebsitehere/gallery",
+      'Gallery URL' => "http://localhost/gallery",
       'g2_blocks' => "dailyImage",
       'g2_show' => "title",
 	  'g2_itemId' => "",
