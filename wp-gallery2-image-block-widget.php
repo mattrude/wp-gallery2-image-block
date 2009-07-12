@@ -6,8 +6,6 @@ Description: Display a Gallery2 Image Block if you're NOT using WPG2
 Version: 0.1.4
 Author: Chris Schierer (aka Lentil)
 Author URI: http://www.theschierers.net/blog
-
-Thanks to all who came before who I stole code and comments from (particularly Mike Smullin's Authors List plugin (http://www.mikesmullin.com/) which I used as an example.
 */
 
 function widget_G2_ImageBlock_init() {
