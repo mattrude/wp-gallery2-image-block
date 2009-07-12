@@ -61,20 +61,47 @@ function widget_G2_ImageBlock_init() {
   // This is the function that outputs the form to let the users edit
   // the widget's title. It's an optional feature that users cry for.
   function widget_G2_ImageBlock_control() {
-    if(($options = get_option('widget_G2_ImageBlock')) === FALSE) $options = array();
-      $options = array_merge(widget_G2_ImageBlock_options(), $options);
-      unset($options[0]); //returned by get_option(), but we don't need it
-      if ( $_POST['G2_ImageBlock-submit'] ) {
-        foreach($options as $key => $value)
-          if(array_key_exists('G2_ImageBlock-'.sanitize($key), $_POST))
-            $options[$key] = strip_tags(stripslashes($_POST['G2_ImageBlock-'.sanitize($key)]));
-          update_option('widget_G2_ImageBlock', $options);
-      }
-      foreach($options as $key => $value): ?>
-      <p style="text-align:left"><label for="G2_ImageBlock-<?=sanitize($key)?>"><?=$key?>: <input style="width: 200px;" id="G2_ImageBlock-<?=sanitize($key)?>" name="G2_ImageBlock-<?=sanitize($key)?>" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
-      <? endforeach;
+    //if(($options = get_option('widget_G2_ImageBlock')) === FALSE) $options = array();
+    //  $options = array_merge(widget_G2_ImageBlock_options(), $options);
+    //  unset($options[0]); //returned by get_option(), but we don't need it
+    //  if ( $_POST['G2_ImageBlock-submit'] ) {
+    //    foreach($options as $key => $value)
+    //      if(array_key_exists('G2_ImageBlock-'.sanitize($key), $_POST))
+    //        $options[$key] = strip_tags(stripslashes($_POST['G2_ImageBlock-'.sanitize($key)]));
+    //      update_option('widget_G2_ImageBlock', $options);
+    //  }
+    //  foreach($options as $key => $value): ?>
+    
+    <?php // Widgets title ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-title">Widget's Title: <input style="width: 200px;" id="G2_ImageBlock-title" name="G2_ImageBlock-title" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+    
+    <?php // Gallery2 URL ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-url">Gallery2 URL: <input style="width: 200px;" id="G2_ImageBlock-url" name="G2_ImageBlock-url" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+    <?php // fields to show ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-show">Fields to Show: <input style="width: 200px;" id="G2_ImageBlock-block" name="G2_ImageBlock-show" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+    <?php // Item ID ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-itemid">Item ID: <input style="width: 200px;" id="G2_ImageBlock-itemid" name="G2_ImageBlock-itemid" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+    <?php // Max Image Size ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-block">Max Image Size: <input style="width: 200px;" id="G2_ImageBlock-max" name="G2_ImageBlock-max" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+    <?php // Exact Image Size ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-exactsize">Exact Image Size: <input style="width: 200px;" id="G2_ImageBlock-exactsize" name="G2_ImageBlock-exactsize" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+    <?php // Link ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-link">Link Images To: <input style="width: 200px;" id="G2_ImageBlock-link" name="G2_ImageBlock-link" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+    <?php // Link Target ?>
+    <p style="text-align:left"><label for="G2_ImageBlock-target">Link Target: <input style="width: 200px;" id="G2_ImageBlock-target" name="G2_ImageBlock-target" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+
+
+    <?php // endforeach;
       echo '<input type="hidden" id="G2_ImageBlock-submit" name="G2_ImageBlock-submit" value="1" />';
     }
+
+
   register_sidebar_widget('G2 ImageBlock', 'widget_G2_ImageBlock');
   register_widget_control('G2 ImageBlock', 'widget_G2_ImageBlock_control', 220, 50 * count(widget_G2_ImageBlock_options()));
 }
