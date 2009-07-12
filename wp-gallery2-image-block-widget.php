@@ -13,23 +13,22 @@ Thanks to all who came before who I stole code and comments from (particularly M
 function widget_G2_ImageBlock_init() {
   if ( !function_exists('register_sidebar_widget') )
     return;
-
-
+  
   // Options and default values for this widget
   function widget_G2_ImageBlock_options() {
 	return array(
 	  'Title' => "Daily Image",
-      'Gallery URL' => "http://localhost/gallery",
-      'g2_blocks' => "dailyImage",
-      'g2_show' => "title|date",
+          'Gallery URL' => "http://localhost/gallery",
+          'g2_blocks' => "dailyImage",
+          'g2_show' => "title|date",
 	  'g2_itemId' => "",
 	  'g2_maxSize' => "",
 	  'g2_exactSize' => "200",
 	  'link' => "",
 	  'linkTarget' => ""
-    );
+        );
   }
-
+  
   // This is the function that outputs the actual code.
   function widget_G2_ImageBlock($args) {
     extract($args);
@@ -72,18 +71,16 @@ function widget_G2_ImageBlock_init() {
           if(array_key_exists('G2_ImageBlock-'.sanitize($key), $_POST))
             $options[$key] = strip_tags(stripslashes($_POST['G2_ImageBlock-'.sanitize($key)]));
           update_option('widget_G2_ImageBlock', $options);
+      }
+      foreach($options as $key => $value): ?>
+      <p style="text-align:left"><label for="G2_ImageBlock-<?=sanitize($key)?>"><?=$key?>: <input style="width: 200px;" id="G2_ImageBlock-<?=sanitize($key)?>" name="G2_ImageBlock-<?=sanitize($key)?>" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
+      <? endforeach;
+      echo '<input type="hidden" id="G2_ImageBlock-submit" name="G2_ImageBlock-submit" value="1" />';
     }
-    foreach($options as $key => $value): ?>
-    <p style="text-align:left"><label for="G2_ImageBlock-<?=sanitize($key)?>"><?=$key?>: <input style="width: 200px;" id="G2_ImageBlock-<?=sanitize($key)?>" name="G2_ImageBlock-<?=sanitize($key)?>" type="text" value="<?=htmlspecialchars($value, ENT_QUOTES)?>" /></label></p>
-    <? endforeach;
-    echo '<input type="hidden" id="G2_ImageBlock-submit" name="G2_ImageBlock-submit" value="1" />';
-  }
-  
   register_sidebar_widget('G2 ImageBlock', 'widget_G2_ImageBlock');
   register_widget_control('G2 ImageBlock', 'widget_G2_ImageBlock_control', 220, 50 * count(widget_G2_ImageBlock_options()));
 }
 
 // Run our code later in case this loads prior to any required plugins.
 add_action('plugins_loaded', 'widget_G2_ImageBlock_init');
-
 ?>
