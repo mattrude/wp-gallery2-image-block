@@ -29,6 +29,7 @@ class Gallery2_Block extends WP_Widget {
     $gallery_linktarget = empty($instance['linktarget']) ? '&nbsp;' : apply_filters('linktarget', $instance['linktarget']);
 
 
+     echo $gallery_show;
     $ch = curl_init();
     $timeout = 5; // set to zero for no timeout
     curl_setopt ($ch, CURLOPT_URL,
@@ -75,7 +76,17 @@ class Gallery2_Block extends WP_Widget {
 
     <p><label for="<?php echo $this->get_field_id('block'); ?>">Image Block to use: <input class="widefat" id="<?php echo $this->get_field_id('block'); ?>" name="<?php echo $this->get_field_name('block'); ?>" type="text" value="<?php echo attribute_escape($gallery_block); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('show'); ?>">Fields to display: <input class="widefat" id="<?php echo $this->get_field_id('show'); ?>" name="<?php echo $this->get_field_name('show'); ?>" type="text" value="<?php echo attribute_escape($gallery_show); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('show'); ?>">Fields to display: <br />
+	Title: <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . title" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . title" />
+	Date:  <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . date" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . date" />
+	<p style="position:absolute; right: 10px; width:300px;"><a href="#" class="help" title="Tooltip">Hover me long-long way, baby!</a></p>
+	Views:  <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . views" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . views" />
+	Owner:  <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . owner" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . owner" />
+	Heading:  <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . heading" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . heading" />
+	Full Size:  <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . fullSize" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . fullSize" />
+	Raw Image:  <input class="widefat" id="<?php echo $this->get_field_id('show'); ?> . rawImage" name="<?php echo $this->get_field_name('show'); ?>" type="checkbox" value="<?php echo attribute_escape($gallery_show); ?> . rawImage" />
+
+   </label></p>
 
     <p><label for="<?php echo $this->get_field_id('itemid'); ?>">Item ID: <input class="widefat" id="<?php echo $this->get_field_id('itemid'); ?>" name="<?php echo $this->get_field_name('itemid'); ?>" type="text" value="<?php echo attribute_escape($gallery_itemid); ?>" /></label></p>
 
