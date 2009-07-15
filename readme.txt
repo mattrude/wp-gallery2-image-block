@@ -5,7 +5,7 @@ Plugin URI: http://www.mattrude.com/2009/07/wp-gallery2-image-block
 Tags: Gallery2, image block, plugin, widget
 Requires at least: 2.8
 Tested up to: 2.8.1
-Stable tag: trunk
+Stable tag: 0.1
 	
 Widget to display your Gallery 2 Image Block on your Wordpress sidebar
 
