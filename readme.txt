@@ -1,4 +1,5 @@
 === wp-gallery2-image-block ===
+
 Contributors: Matt Rude 
 Author URI: http://www.mattrude.com
 Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block
@@ -13,18 +14,23 @@ Widget to display your Gallery 2 Image Block on your Wordpress sidebar
 
 This plugin will allow you to put one of the meny Gallery2 Image Blocks on your Wordpres site.  You are required to have a running Gallery2 install to use this plugin.  
   
-This is a complete rewrite of <a href="http://www.theschierers.net/blog">Chris Schierer (aka Lentil)</a> <a href="http://wordpress.org/extend/plugins/gallery2-image-block-widget">Gallery2 Image Block Plugin</a> 0.1.4.  This rewrite uses the new Wordpress 2.8 Widget API, so is only compatable with wordpres 2.8+.  
+This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschierers.net/blog) Gallery2 Image Block Plugin 0.1.4.  This rewrite uses the new Wordpress 2.8 Widget API, so is only compatable with wordpres 2.8+.  
   
-Options described in the \[Gallery 2 Image Block\](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included.  
+Options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included.  
   
 User configuration of Image Block options is available through the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
   
-\*Note:\* The widget is written using \[lib\_curl()\](http://www.php.net/curl) to avoid url\_fopen issues.
+*Note:* The widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
 	
 == Installation ==
 
-Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+Extract the zip file and just drop the contents in the `wp-content/plugins/` directory of your WordPress installation and then activate the Plugin from Plugins page.
+
+== Frequently Asked Questions ==
+
+
 == Screenshots ==
+
 1. Dashboard Wiget Screen
 
 2. Shown on main page
