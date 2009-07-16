@@ -33,7 +33,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 * Corrcted typo in $gallery_linktarget 
 
 = 0.3 =
-* Corrected missint Header text tag
+* Corrected missing Header text tag
 
 = 0.1 =
 * Initial Release
