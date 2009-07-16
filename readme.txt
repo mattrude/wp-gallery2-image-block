@@ -1,5 +1,4 @@
 === wp-gallery2-image-block ===
-
 Contributors: mattrude
 Author URI: http://www.mattrude.com
 Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block
@@ -32,6 +31,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 = 0.3 =
 * Corrected missint Header text tag
+
 = 0.2 =
 * Header text is no longer hard coded
 
