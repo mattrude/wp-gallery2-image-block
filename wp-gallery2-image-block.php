@@ -30,7 +30,7 @@ class Gallery2_Block extends WP_Widget {
     $ch = curl_init();
     $timeout = 5; // set to zero for no timeout
     curl_setopt ($ch, CURLOPT_URL,
-    $gallery_url . '/main.php?g2_view=imageblock.External&g2_blocks=' . $gallery_block . '&g2_show=' . $gallery_show . '&g2_itemId=' . $gallery_itemid . '&g2_maxSize=' . $gallery_maxsize . '&g2_exactSize=' . $gallery_exactsize . '&g2_link=' . $gallery_link . '&g2_linkTarget=' . $gallary_linktarget );
+    $gallery_url . '/main.php?g2_view=imageblock.External&g2_blocks=' . $gallery_block . '&g2_show=' . $gallery_show . '&g2_itemId=' . $gallery_itemid . '&g2_maxSize=' . $gallery_maxsize . '&g2_exactSize=' . $gallery_exactsize . '&g2_link=' . $gallery_link . '&g2_linkTarget=' . $gallery_linktarget );
     curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
     $file_contents = curl_exec($ch);
