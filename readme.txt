@@ -29,11 +29,11 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 == Change Log ==
 
+= 0.4 =
+* Corrcted typo in $gallery_linktarget 
+
 = 0.3 =
 * Corrected missint Header text tag
-
-= 0.2 =
-* Header text is no longer hard coded
 
 = 0.1 =
 * Initial Release
