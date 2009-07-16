@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Gallery2 Image Block
-Plugin URI: http://www.mattrude.com/gallery2-image-block
+Plugin URI: http://www.mattrude.com/2009/07/wp-gallery2-image-block
 Description: Display a Gallery2 Image Block on your Wordpres site, this is requires a connection to a Gallery2 install.
 Version: 0.1
 Author: Matt Rude
@@ -17,8 +17,7 @@ class Gallery2_Block extends WP_Widget {
   function widget($args, $instance) {
     extract($args);
   
-    echo $before_widget;
-    $gallery_widget_title = empty($instance['title']) ? '&nbsp;' : apply_filters('widget_title', $instance['title']);
+    $title = empty($instance['title']) ? '&nbsp;' : apply_filters('widget_title', $instance['title']);
     $gallery_url = empty($instance['url']) ? '&nbsp;' : apply_filters('url', $instance['url']);
     $gallery_block = empty($instance['block']) ? '&nbsp;' : apply_filters('block', $instance['block']);
     $gallery_show = empty($instance['show']) ? '&nbsp;' : apply_filters('show', $instance['show']);
@@ -28,7 +27,6 @@ class Gallery2_Block extends WP_Widget {
     $gallery_link = empty($instance['link']) ? '&nbsp;' : apply_filters('link', $instance['link']);
     $gallery_linktarget = empty($instance['linktarget']) ? '&nbsp;' : apply_filters('linktarget', $instance['linktarget']);
 
-
     $ch = curl_init();
     $timeout = 5; // set to zero for no timeout
     curl_setopt ($ch, CURLOPT_URL,
@@ -37,6 +35,7 @@ class Gallery2_Block extends WP_Widget {
     curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
     $file_contents = curl_exec($ch);
     curl_close($ch);
+    echo $before_widget.$before_title.$title.$after_title;
     echo $file_contents;
     echo $after_widget;
   }
@@ -58,7 +57,7 @@ class Gallery2_Block extends WP_Widget {
 
   function form($instance) {
     $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'url' => '', 'block' => '' ) );
-    $gallery_widget_title = strip_tags($instance['title']);
+    $title = strip_tags($instance['title']);
     $gallery_url = strip_tags($instance['url']);
     $gallery_block = strip_tags($instance['block']);
     $gallery_show = strip_tags($instance['show']);
@@ -66,10 +65,9 @@ class Gallery2_Block extends WP_Widget {
     $gallery_maxsize = strip_tags($instance['maxsize']);
     $gallery_exactsize = strip_tags($instance['exactsize']);
     $gallery_link = strip_tags($instance['link']);
-    $gallery_linktarget = strip_tags($instance['linktarget']);
-
-?>
-    <p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($gallery_widget_title); ?>" /></label></p>
+    $gallery_linktarget = strip_tags($instance['linktarget']);?>
+    
+    <p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
 
     <p><label for="<?php echo $this->get_field_id('url'); ?>">Gallery2 URL: <input class="widefat" id="<?php echo $this->get_field_id('url'); ?>" name="<?php echo $this->get_field_name('url'); ?>" type="text" value="<?php echo attribute_escape($gallery_url); ?>" /></label></p>
 
@@ -86,9 +84,6 @@ class Gallery2_Block extends WP_Widget {
     <p><label for="<?php echo $this->get_field_id('link'); ?>">Link Images To: <input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo attribute_escape($gallery_link); ?>" /></label></p>
 
     <p><label for="<?php echo $this->get_field_id('linktarget'); ?>">Open above Links in: <input class="widefat" id="<?php echo $this->get_field_id('linktarget'); ?>" name="<?php echo $this->get_field_name('linktarget'); ?>" type="text" value="<?php echo attribute_escape($gallery_linktarget); ?>" /></label></p>
-
-
-
 
     <?php 
   }
