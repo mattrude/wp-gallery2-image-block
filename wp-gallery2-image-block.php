@@ -28,7 +28,7 @@ class Gallery2_Block extends WP_Widget {
     $gallery_link = empty($instance['link']) ? '&nbsp;' : apply_filters('link', $instance['link']);
     $gallery_linktarget = empty($instance['linktarget']) ? '&nbsp;' : apply_filters('linktarget', $instance['linktarget']);
 
-    echo "<h2>$gallery_widget_title </h2>";
+    echo "<div class='sb-title widgettitle'>$gallery_widget_title</dev>";
     $ch = curl_init();
     $timeout = 5; // set to zero for no timeout
     curl_setopt ($ch, CURLOPT_URL,
