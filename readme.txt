@@ -1,6 +1,6 @@
 === wp-gallery2-image-block ===
 
-Contributors: Matt Rude 
+Contributors: mattrude
 Author URI: http://www.mattrude.com
 Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block
 Tags: Gallery2, image block, plugin, widget
