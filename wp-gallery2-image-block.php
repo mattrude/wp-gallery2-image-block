@@ -10,6 +10,7 @@ Author URI: http://www.mattrude.com/
 
 class Gallery2_Block extends WP_Widget {
   function Gallery2_Block() {
+    load_theme_textdomain ('wp-gallery2-image-block');
     $gallery_name = __('Gallery2 Image Block', 'wp-gallery2-image-block');
     $gallery_description = __('Gallery2 Image Block for Wordpress', 'wp-gallery2-image-block');
     $widget_ops = array('classname' => 'Gallery2_Block', 'description' => $gallery_description );
@@ -18,7 +19,7 @@ class Gallery2_Block extends WP_Widget {
 
   function widget($args, $instance) {
     extract($args);
-  
+    load_theme_textdomain ('wp-gallery2-image-block');
     $title = empty($instance['title']) ? '&nbsp;' : apply_filters('widget_title', $instance['title']);
     $gallery_url = empty($instance['url']) ? '&nbsp;' : apply_filters('url', $instance['url']);
     $gallery_block = empty($instance['block']) ? '&nbsp;' : apply_filters('block', $instance['block']);
