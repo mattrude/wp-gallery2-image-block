@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Matt Rude <matt@mattrude.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+#. Text in echo
+#: wp-gallery2-image-block.php:85
+msgid "Exact Size:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:79
+msgid "Fields to display:"
+msgstr ""
+
+#. Text in function
+#: wp-gallery2-image-block.php:1
+msgid "Gallery2 Image Block"
+msgstr ""
+
+#. Text in function
+#: wp-gallery2-image-block.php:1
+msgid "Gallery2 Image Block for Wordpress"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:75
+msgid "Gallery2 URL:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:77
+msgid "Image Block to use:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:81
+msgid "Item ID:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:87
+msgid "Link Images To:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:83
+msgid "Max Size:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:89
+msgid "Open above Links in:"
+msgstr ""
+
+#. Text in echo
+#: wp-gallery2-image-block.php:73
+msgid "Title:"
+msgstr ""
+
