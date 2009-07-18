@@ -6,6 +6,7 @@ Description: Display a Gallery2 Image Block on your Wordpres site, this is requi
 Version: 0.4
 Author: Matt Rude
 Author URI: http://www.mattrude.com/
+Text Domain: wp-gallery2-image-block
 */
 
 class Gallery2_Block extends WP_Widget {
