@@ -1,9 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Matt Rude
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Gallery2 Image Block
+# Copyright (C) 2009 Matt Rude
+# This file is distributed under the GPLv2 license.
+# Matt Rude, matt@mattrude.com, 2009
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.5\n"
@@ -27,39 +26,39 @@ msgid "Gallery2 Image Block for Wordpress"
 msgstr ""
 
 #: wp-gallery2-image-block.php:74
-msgid "Title:"
+msgid "Title"
 msgstr ""
 
 #: wp-gallery2-image-block.php:76
-msgid "Gallery2 URL:"
+msgid "Gallery2 URL"
 msgstr ""
 
 #: wp-gallery2-image-block.php:78
-msgid "Image Block to use:"
+msgid "Image Block to use"
 msgstr ""
 
 #: wp-gallery2-image-block.php:80
-msgid "Fields to display:"
+msgid "Fields to display"
 msgstr ""
 
 #: wp-gallery2-image-block.php:82
-msgid "Item ID:"
+msgid "Item ID"
 msgstr ""
 
 #: wp-gallery2-image-block.php:84
-msgid "Max Size:"
+msgid "Max Size"
 msgstr ""
 
 #: wp-gallery2-image-block.php:86
-msgid "Exact Size:"
+msgid "Exact Size"
 msgstr ""
 
 #: wp-gallery2-image-block.php:88
-msgid "Link Images To:"
+msgid "Link Images To"
 msgstr ""
 
 #: wp-gallery2-image-block.php:90
-msgid "Open above Links in:"
+msgid "Open above Links in"
 msgstr ""
 
 #. Description of an extension

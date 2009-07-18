@@ -10,8 +10,7 @@ Author URI: http://www.mattrude.com/
 
 class Gallery2_Block extends WP_Widget {
   function Gallery2_Block() {
-    $plugin_dir = basename(dirname(__FILE__));
-    load_plugin_textdomain( 'wp-gallery2-image-block', 'wp-content/plugins/' . $plugin_dir, $plugin_dir );
+    load_plugin_textdomain( 'wp-gallery2-image-block' );
     $gallery_name = __('Gallery2 Image Block', 'wp-gallery2-image-block');
     $gallery_description = __('Gallery2 Image Block for Wordpress', 'wp-gallery2-image-block');
     $widget_ops = array('classname' => 'Gallery2_Block', 'description' => $gallery_description );
@@ -20,8 +19,7 @@ class Gallery2_Block extends WP_Widget {
 
   function widget($args, $instance) {
     extract($args);
-    $plugin_dir = basename(dirname(__FILE__));
-    load_plugin_textdomain( 'wp-gallery2-image-block', 'wp-content/plugins/' . $plugin_dir, $plugin_dir );
+    load_plugin_textdomain( 'wp-gallery2-image-block', 'wp-content/plugins/' );
     $title = empty($instance['title']) ? '&nbsp;' : apply_filters('widget_title', $instance['title']);
     $gallery_url = empty($instance['url']) ? '&nbsp;' : apply_filters('url', $instance['url']);
     $gallery_block = empty($instance['block']) ? '&nbsp;' : apply_filters('block', $instance['block']);
@@ -71,23 +69,23 @@ class Gallery2_Block extends WP_Widget {
     $gallery_link = strip_tags($instance['link']);
     $gallery_linktarget = strip_tags($instance['linktarget']);?>
     
-    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php __('Title:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('url'); ?>"><?php __('Gallery2 URL:', 'wp-gallery2-image-block')?> <input class="widefat" id="<?php echo $this->get_field_id('url'); ?>" name="<?php echo $this->get_field_name('url'); ?>" type="text" value="<?php echo attribute_escape($gallery_url); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('url'); ?>"><?php _e('Gallery2 URL', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('url'); ?>" name="<?php echo $this->get_field_name('url'); ?>" type="text" value="<?php echo attribute_escape($gallery_url); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('block'); ?>"><?php __('Image Block to use:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('block'); ?>" name="<?php echo $this->get_field_name('block'); ?>" type="text" value="<?php echo attribute_escape($gallery_block); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('block'); ?>"><?php _e('Image Block to use', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('block'); ?>" name="<?php echo $this->get_field_name('block'); ?>" type="text" value="<?php echo attribute_escape($gallery_block); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('show'); ?>"><?php __('Fields to display:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('show'); ?>" name="<?php echo $this->get_field_name('show'); ?>" type="text" value="<?php echo attribute_escape($gallery_show); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('show'); ?>"><?php _e('Fields to display', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('show'); ?>" name="<?php echo $this->get_field_name('show'); ?>" type="text" value="<?php echo attribute_escape($gallery_show); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('itemid'); ?>"><?php __('Item ID:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('itemid'); ?>" name="<?php echo $this->get_field_name('itemid'); ?>" type="text" value="<?php echo attribute_escape($gallery_itemid); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('itemid'); ?>"><?php _e('Item ID', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('itemid'); ?>" name="<?php echo $this->get_field_name('itemid'); ?>" type="text" value="<?php echo attribute_escape($gallery_itemid); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('maxsize'); ?>"><?php __('Max Size:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('maxsize'); ?>" name="<?php echo $this->get_field_name('maxsize'); ?>" type="text" value="<?php echo attribute_escape($gallery_maxsize); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('maxsize'); ?>"><?php _e('Max Size', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('maxsize'); ?>" name="<?php echo $this->get_field_name('maxsize'); ?>" type="text" value="<?php echo attribute_escape($gallery_maxsize); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('exactsize'); ?>"><?php __('Exact Size:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('exactsize'); ?>" name="<?php echo $this->get_field_name('exactsize'); ?>" type="text" value="<?php echo attribute_escape($gallery_exactsize); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('exactsize'); ?>"><?php _e('Exact Size', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('exactsize'); ?>" name="<?php echo $this->get_field_name('exactsize'); ?>" type="text" value="<?php echo attribute_escape($gallery_exactsize); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('link'); ?>"><?php __('Link Images To:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo attribute_escape($gallery_link); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('link'); ?>"><?php _e('Link Images To', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo attribute_escape($gallery_link); ?>" /></label></p>
 
-    <p><label for="<?php echo $this->get_field_id('linktarget'); ?>"><?php __('Open above Links in:', 'wp-gallery2-image-block')?><input class="widefat" id="<?php echo $this->get_field_id('linktarget'); ?>" name="<?php echo $this->get_field_name('linktarget'); ?>" type="text" value="<?php echo attribute_escape($gallery_linktarget); ?>" /></label></p>
+    <p><label for="<?php echo $this->get_field_id('linktarget'); ?>"><?php _e('Open above Links in', 'wp-gallery2-image-block')?>:<input class="widefat" id="<?php echo $this->get_field_id('linktarget'); ?>" name="<?php echo $this->get_field_name('linktarget'); ?>" type="text" value="<?php echo attribute_escape($gallery_linktarget); ?>" /></label></p>
 
     <?php 
   }
