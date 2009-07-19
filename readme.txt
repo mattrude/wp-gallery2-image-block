@@ -1,7 +1,7 @@
 === wp-gallery2-image-block ===
 Contributors: mattrude
 Author URI: http://www.mattrude.com/
-Plugin URI: http://www.mattrude.com/2009/07/wp-gallery2-image-block/
+Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block/
 Tags: Gallery2, image block, plugin, widget
 Requires at least: 2.8
 Tested up to: 2.8.1
@@ -15,15 +15,17 @@ This plugin will allow you to put one of the meny [Gallery2](http://gallery.mena
   
 This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschierers.net/blog) [Gallery2 Image Block Plugin](http://wordpress.org/extend/plugins/gallery2-image-block-widget) 0.1.4.  This rewrite uses the new Wordpress 2.8 Widget API, so is only compatable with wordpress 2.8+.
   
-Options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included.  
-  
-User configuration of Image Block options is available through the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
+All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included. User configuration of Image Block options are available in the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
+
+As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 3 languages besides English.
 
 Fully Translated into:
 * French
+* English
+* German
 * Spanish
   
-*Note:* The widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
+*Note:* This widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
 	
 == Installation ==
 
