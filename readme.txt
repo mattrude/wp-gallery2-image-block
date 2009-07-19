@@ -35,18 +35,18 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 == Change Log ==
 
-= 0.5 =
+= Version: 0.5 =
 * Added full localization support
   * Added French translation
   * Added Spanish translation
 
-= 0.4 =
+= Version: 0.4 =
 * Corrcted typo in $gallery_linktarget 
 
-= 0.3 =
+= Version: 0.3 =
 * Corrected missing Header text tag
 
-= 0.1 =
+= Version: 0.1 =
 * Initial Release
 
 == Screenshots ==
