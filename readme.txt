@@ -17,7 +17,7 @@ This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschier
   
 All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included. User configuration of Image Block options are available in the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
 
-As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 3 languages besides English.
+As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 3 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
 
 Fully Translated into:
 * French
