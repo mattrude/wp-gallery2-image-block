@@ -18,6 +18,10 @@ This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschier
 Options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included.  
   
 User configuration of Image Block options is available through the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
+
+Fully Translated into:
+* French
+* Spanish
   
 *Note:* The widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
 	
@@ -28,6 +32,11 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 == Frequently Asked Questions ==
 
 == Change Log ==
+
+= 0.5 =
+* Added full localization support
+  * Added French translation
+  * Added Spanish translation
 
 = 0.4 =
 * Corrcted typo in $gallery_linktarget 
