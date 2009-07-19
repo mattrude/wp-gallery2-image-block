@@ -38,6 +38,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 = Version: 0.5 =
 * Added full localization support
   * Added French translation
+  * Added German translation
   * Added Spanish translation
 
 = Version: 0.4 =
