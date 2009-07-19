@@ -34,7 +34,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 == Frequently Asked Questions ==
 
-== Change Log ==
+== Changelog ==
 
 = Version: 0.5 =
 * Added full localization support
