@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-gallery2-image-block\n"
 "POT-Creation-Date: 2009-07-18 23:18+0000\n"
-"PO-Revision-Date: 2009-07-18 18:59-0600\n"
+"PO-Revision-Date: 2009-07-18 19:40-0600\n"
 "Last-Translator: Matt Rude <matt@mattrude.com>\n"
 "Language-Team: Matt Rude <matt@mattrude.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Título"
 
 #: wp-gallery2-image-block.php:76
 msgid "Gallery2 URL"
-msgstr "Gallery2 URL"
+msgstr "Gallery2 dirección del sitio"
 
 #: wp-gallery2-image-block.php:78
 msgid "Image Block to use"
