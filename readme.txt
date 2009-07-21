@@ -35,11 +35,14 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 == Frequently Asked Questions ==
 
 == Change Log ==
+= Version: 0.5.1 =
+* Tested with Wordpress 2.8.2
+* Added Dutch translation
 
 = Version: 0.5 =
 * Added full localization support
-  * Added French translation
-  * Added Spanish translation
+* Added French translation
+* Added Spanish translation
 
 = Version: 0.4 =
 * Corrcted typo in $gallery_linktarget 
