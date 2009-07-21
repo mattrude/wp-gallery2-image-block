@@ -63,10 +63,6 @@ msgstr ""
 
 #. Description of an extension
 msgid ""
-"Display a Gallery2 Image Block on your Wordpres site, this is requires a "
+"Display a Gallery2 Image Block on your Wordpress site, this is requires a "
 "connection to a Gallery2 install."
-msgstr ""
-
-#. Author of an extension
-msgid "Matt Rude"
 msgstr ""

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-gallery2-image-block\n"
 "POT-Creation-Date: 2009-07-18 23:18+0000\n"
-"PO-Revision-Date: 2009-07-20 22:34-0600\n"
+"PO-Revision-Date: 2009-07-20 22:37-0600\n"
 "Last-Translator: Matt Rude <matt@mattrude.com>\n"
 "Language-Team: Matt Rude <matt@mattrude.com>\n"
 "MIME-Version: 1.0\n"
@@ -19,11 +19,11 @@ msgstr ""
 #. Plugin Name of an extension
 #: wp-gallery2-image-block.php:15
 msgid "Gallery2 Image Block"
-msgstr "Galerie2 Bild-Block"
+msgstr "Galerij2 afbeelding blokkeren"
 
 #: wp-gallery2-image-block.php:16
 msgid "Gallery2 Image Block for Wordpress"
-msgstr "Galerie2 Bild Block für Wordpress"
+msgstr "Galerij2 afbeelding blokkeren voor Wordpress"
 
 #: wp-gallery2-image-block.php:74
 msgid "Title"
@@ -31,40 +31,37 @@ msgstr "Titel"
 
 #: wp-gallery2-image-block.php:76
 msgid "Gallery2 URL"
-msgstr "Galerie2 Adresse "
+msgstr "Galerij2 URL"
 
 #: wp-gallery2-image-block.php:78
 msgid "Image Block to use"
-msgstr "Bild-Block zu verwenden "
+msgstr "Blok afbeelding te gebruiken"
 
 #: wp-gallery2-image-block.php:80
 msgid "Fields to display"
-msgstr "Felder, um"
+msgstr "Velden weer te geven"
 
 #: wp-gallery2-image-block.php:82
 msgid "Item ID"
-msgstr "Artikel Identität"
+msgstr "item identiteit"
 
 #: wp-gallery2-image-block.php:84
 msgid "Max Size"
-msgstr "Max-Größe "
+msgstr "Max Grootte"
 
 #: wp-gallery2-image-block.php:86
 msgid "Exact Size"
-msgstr "Genaue Größe"
+msgstr "Exact Grootte"
 
 #: wp-gallery2-image-block.php:88
 msgid "Link Images To"
-msgstr "Link Bilder zu"
+msgstr "link naar beelden"
 
 #: wp-gallery2-image-block.php:90
 msgid "Open above Links in"
-msgstr "Öffnen Sie über Links in"
+msgstr "open bovenstaande links in"
 
 #. Description of an extension
 msgid "Display a Gallery2 Image Block on your Wordpress site, this is requires a connection to a Gallery2 install."
-msgstr "Zeigt eine Gallery2 Image Block auf Ihrer Website Wordpress, das ist eine Verbindung zu einem Gallery2 installieren."
-
-#~ msgid "Matt Rude"
-#~ msgstr "Matt Rude"
+msgstr "Elkaar een Galerie2 afbeelding blokkeren op uw site Wordpress is dit vereist een verbinding met een Galerie2 installeren."
 
