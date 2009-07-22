@@ -2,7 +2,7 @@
 Contributors: mattrude
 Author URI: http://www.mattrude.com/
 Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block/
-Tags: Gallery2, image block, plugin, widget
+Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
 Tested up to: 2.8.1
 Stable tag: 0.5
@@ -20,7 +20,7 @@ All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/G
 As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 4 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
 
 Fully Translated into:
-* Dutch
+* Dutch (0.5.1)
 * French
 * English
 * German
@@ -35,11 +35,15 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 == Frequently Asked Questions ==
 
 == Change Log ==
+= Version: 0.5.1 =
+* Tested with Wordpress 2.8.2 - no changes
+* Updated POT file do to typo
+* Added Dutch translation
 
 = Version: 0.5 =
 * Added full localization support
-  * Added French translation
-  * Added Spanish translation
+* Added French translation
+* Added Spanish translation
 
 = Version: 0.4 =
 * Corrcted typo in $gallery_linktarget 
