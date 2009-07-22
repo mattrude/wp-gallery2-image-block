@@ -17,13 +17,14 @@ This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschier
   
 All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included. User configuration of Image Block options are available in the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
 
-As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 4 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
+As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 5 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
 
 Fully Translated into:
 * Dutch (0.5.1)
 * French
 * English
 * German
+* Portuguese (0.5.1)
 * Spanish
   
 *Note:* This widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
@@ -39,6 +40,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 * Tested with Wordpress 2.8.2 - no changes
 * Updated POT file do to typo
 * Added Dutch translation
+* Added Portuguese translation
 
 = Version: 0.5 =
 * Added full localization support
