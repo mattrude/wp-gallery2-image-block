@@ -37,6 +37,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 == Change Log ==
 = Version: 0.5.1 =
 * Tested with Wordpress 2.8.2 - no changes
+* Updated POT file do to typo
 * Added Dutch translation
 
 = Version: 0.5 =
