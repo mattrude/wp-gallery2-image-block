@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 0.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-gallery2-image-block\n"
 "POT-Creation-Date: 2009-07-18 23:18+0000\n"
-"PO-Revision-Date: 2009-07-18 19:40-0600\n"
+"PO-Revision-Date: 2009-07-20 22:34-0600\n"
 "Last-Translator: Matt Rude <matt@mattrude.com>\n"
 "Language-Team: Matt Rude <matt@mattrude.com>\n"
 "MIME-Version: 1.0\n"
@@ -62,10 +62,9 @@ msgid "Open above Links in"
 msgstr "Enlaces en abierto por encima de"
 
 #. Description of an extension
-msgid "Display a Gallery2 Image Block on your Wordpres site, this is requires a connection to a Gallery2 install."
-msgstr "Mostrar una imagen Gallery2 Bloque Wordpres en su sitio web, esta requiere una conexión a una Gallery2 instalar."
+msgid "Display a Gallery2 Image Block on your Wordpress site, this is requires a connection to a Gallery2 install."
+msgstr "Mostrar una imagen Gallery2 Bloque Wordpress en su sitio web, esta requiere una conexión a una Gallery2 instalar."
 
-#. Author of an extension
-msgid "Matt Rude"
-msgstr "Matt Rude"
+#~ msgid "Matt Rude"
+#~ msgstr "Matt Rude"
 
