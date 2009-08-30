@@ -1,12 +1,12 @@
 === wp-gallery2-image-block ===
 Contributors: mattrude
-Author URI: http://www.mattrude.com/
-Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block/
-Donate link: http://www.mattrude.com/donate/
+Author URI: http://mattrude.com/
+Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
+Donate link: http://mattrude.com/donate/
 Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
-Tested up to: 2.8.1
-Stable tag: 0.5.1
+Tested up to: 2.8.4
+Stable tag: 0.5.2
 	
 Widget to display your Gallery 2 Image Block on your Wordpress sidebar
 
@@ -36,9 +36,21 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 == Frequently Asked Questions ==
 
+You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
+
+Q: Will this plugin work with out using Galler2?
+A: No.
+
+Q: Will I be able to add a random image to a page with this plugin?
+A: No, this plugin will only work in the wiget sidebar.
+
 == Change Log ==
+= Version: 0.5.2 =
+* Tested with wordpress 2.8.3 & 2.8.4 - no code change
+* Corrected URL's
+
 = Version: 0.5.1 =
-* Tested with Wordpress 2.8.2 - no changes
+* Tested with Wordpress 2.8.2 - no code changes
 * Updated POT file do to typo
 * Added Dutch translation
 * Added Portuguese translation
