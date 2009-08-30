@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Gallery2 Image Block
-Plugin URI: http://www.mattrude.com/plugins/wp-gallery2-image-block/
+Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
 Description: Display a Gallery2 Image Block on your Wordpress site, this is requires a connection to a Gallery2 install.
-Version: 0.5.1
+Version: 0.5.2
 Author: Matt Rude
-Author URI: http://www.mattrude.com/
+Author URI: http://mattrude.com/
 */
 
 class Gallery2_Block extends WP_Widget {
