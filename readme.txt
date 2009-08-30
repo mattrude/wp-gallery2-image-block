@@ -39,8 +39,8 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
 
-= Q: Will this plugin work without [Gallery2](http://gallery.menalto.com/)? =
-A: No.
+= Q: Will this plugin work without Gallery2? =
+A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
 
 = Q: Will I be able to add a random image to a page with this plugin? =
 A: Sorry, this plugin will only work in the wiget sidebar.
