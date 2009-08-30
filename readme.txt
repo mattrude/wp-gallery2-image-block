@@ -46,6 +46,7 @@ A: No.
 A: Sorry, this plugin will only work in the wiget sidebar.
 
 == Change Log ==
+
 = Version: 0.5.2 =
 * Tested with wordpress 2.8.3 & 2.8.4 - no code change
 * Corrected URL's
