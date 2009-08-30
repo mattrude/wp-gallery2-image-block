@@ -50,6 +50,7 @@ A: Sorry, this plugin will only work in the wiget sidebar.
 = Version: 0.5.2 =
 * Tested with wordpress 2.8.3 & 2.8.4 - no code change
 * Corrected URL's
+* Updated README
 
 = Version: 0.5.1 =
 * Tested with Wordpress 2.8.2 - no code changes
