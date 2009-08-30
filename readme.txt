@@ -1,4 +1,4 @@
-=== wp-gallery2-image-block ===
+=== Gallery2 Image block ===
 Contributors: mattrude
 Author URI: http://mattrude.com/
 Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
