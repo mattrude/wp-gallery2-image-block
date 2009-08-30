@@ -1,4 +1,4 @@
-=== Gallery2 Image block ===
+=== Gallery2 Image Block ===
 Contributors: mattrude
 Author URI: http://mattrude.com/
 Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
@@ -39,13 +39,13 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
 
-= Q: Will this plugin work with out using Galler2? =
+= Q: Will this plugin work without [Gallery2](http://gallery.menalto.com/)? =
 A: No.
 
 = Q: Will I be able to add a random image to a page with this plugin? =
 A: Sorry, this plugin will only work in the wiget sidebar.
 
-== Change Log ==
+== Changelog ==
 
 = Version: 0.5.2 =
 * Tested with wordpress 2.8.3 & 2.8.4 - no code change
