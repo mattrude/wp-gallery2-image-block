@@ -1,4 +1,4 @@
-=== Gallery2 Image block ===
+=== Gallery2 Image Block ===
 Contributors: mattrude
 Author URI: http://mattrude.com/
 Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
@@ -20,7 +20,8 @@ All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/G
 
 As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 5 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
 
-Fully Translated into:
+= Fully Translated into: =
+
 * Dutch (0.5.1)
 * French
 * English
@@ -28,7 +29,7 @@ Fully Translated into:
 * Portuguese (0.5.1)
 * Spanish
   
-*Note:* This widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
+*Note:* This widget was written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
 	
 == Installation ==
 
@@ -38,16 +39,18 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
 
-Q: Will this plugin work with out using Galler2?
-A: No.
+= Q: Will this plugin work without Gallery2? =
+A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
 
-Q: Will I be able to add a random image to a page with this plugin?
-A: No, this plugin will only work in the wiget sidebar.
+= Q: Will I be able to add a random image to a page with this plugin? =
+A: Sorry, this plugin will only work in the wiget sidebar.
 
-== Change Log ==
+== Changelog ==
+
 = Version: 0.5.2 =
 * Tested with wordpress 2.8.3 & 2.8.4 - no code change
 * Corrected URL's
+* Updated README
 
 = Version: 0.5.1 =
 * Tested with Wordpress 2.8.2 - no code changes
@@ -72,5 +75,4 @@ A: No, this plugin will only work in the wiget sidebar.
 == Screenshots ==
 
 1. Dashboard Wiget Screen
-
 2. Shown on main page
