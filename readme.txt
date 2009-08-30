@@ -21,7 +21,6 @@ All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/G
 As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 5 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
 
 = Fully Translated into: =
-
 * Dutch (0.5.1)
 * French
 * English
