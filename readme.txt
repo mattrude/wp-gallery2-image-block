@@ -22,10 +22,15 @@ As of version 0.5, wp-gallery2-image-block has full localization support, and sh
 
 Fully Translated into:
 * Dutch (0.5.1)
+
 * French
+
 * English
+
 * German
+
 * Portuguese (0.5.1)
+
 * Spanish
   
 *Note:* This widget is written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
@@ -39,10 +44,12 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
 
 Q: Will this plugin work with out using Galler2?
+
 A: No.
 
 Q: Will I be able to add a random image to a page with this plugin?
-A: No, this plugin will only work in the wiget sidebar.
+
+A: Sorry, this plugin will only work in the wiget sidebar.
 
 == Change Log ==
 = Version: 0.5.2 =
