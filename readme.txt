@@ -36,7 +36,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 == Frequently Asked Questions ==
 
-You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
+You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/forums/forum/wp-gallery2-image-block).
 
 = Q: Will this plugin work without Gallery2? =
 A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
