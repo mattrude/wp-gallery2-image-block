@@ -1,7 +1,7 @@
 === Gallery2 Image Block ===
 Contributors: mattrude
 Author URI: http://mattrude.com/
-Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
+Plugin URI: http://mattrude.com/projects/wp-gallery2-image-block/
 Donate link: http://mattrude.com/donate/
 Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
