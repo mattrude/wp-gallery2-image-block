@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Gallery2 Image Block
-Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
+Plugin URI: http://mattrude.com/projects/wp-gallery2-image-block/
 Description: Display a Gallery2 Image Block on your Wordpress site, this is requires a connection to a Gallery2 install.
-Version: 0.5.2
+Version: 0.6
 Author: Matt Rude
 Author URI: http://mattrude.com/
 */
@@ -33,14 +33,12 @@ class Gallery2_Block extends WP_Widget {
     $gallery_link = empty($instance['link']) ? '&nbsp;' : apply_filters('link', $instance['link']);
     $gallery_linktarget = empty($instance['linktarget']) ? '&nbsp;' : apply_filters('linktarget', $instance['linktarget']);
 
-    $ch = curl_init();
-    $timeout = 5; // set to zero for no timeout
-    curl_setopt ($ch, CURLOPT_URL,
-    $gallery_url . '/main.php?g2_view=imageblock.External&g2_blocks=' . $gallery_block . '&g2_show=' . $gallery_show . '&g2_itemId=' . $gallery_itemid . '&g2_maxSize=' . $gallery_maxsize . '&g2_exactSize=' . $gallery_exactsize . '&g2_link=' . $gallery_link . '&g2_linkTarget=' . $gallery_linktarget );
-    curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-    $file_contents = curl_exec($ch);
-    curl_close($ch);
+    //Grab the image and meta data from the Gallery 2 install
+    $request = new WP_Http;
+    $result = $request->request( $gallery_url . '/main.php?g2_view=imageblock.External&g2_blocks=' . $gallery_block . '&g2_show=' . $gallery_show . '&g2_itemId=' . $gallery_itemid . '&g2_maxSize=' . $gallery_maxsize . '&g2_exactSize=' . $gallery_exactsize . '&g2_link=' . $gallery_link . '&g2_linkTarget=' . $gallery_linktarget );
+    $file_contents = $result['body'];
+
+    // Output the wigget to the browser
     echo $before_widget.$before_title.$title.$after_title;
     echo $file_contents;
     echo $after_widget;
