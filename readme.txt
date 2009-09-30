@@ -6,7 +6,7 @@ Donate link: http://mattrude.com/donate/
 Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 0.5.2
+Stable tag: 0.6
 	
 Widget to display your Gallery 2 Image Block on your Wordpress sidebar
 
@@ -28,7 +28,7 @@ As of version 0.5, wp-gallery2-image-block has full localization support, and sh
 * Portuguese (0.5.1)
 * Spanish
   
-*Note:* This widget was written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
+*Note:* This widget was written using [wp_http](http://planetozh.com/blog/2009/08/how-to-make-http-requests-with-wordpress/) to increase compatibility with more sites (version 0.6).
 	
 == Installation ==
 
@@ -45,6 +45,9 @@ A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
 A: Sorry, this plugin will only work in the wiget sidebar.
 
 == Changelog ==
+
+= Version: 0.6 =
+* Switched from using [lib_curl()](http://www.php.net/curl) to [wp_http](http://planetozh.com/blog/2009/08/how-to-make-http-requests-with-wordpress/)
 
 = Version: 0.5.2 =
 * Tested with wordpress 2.8.3 & 2.8.4 - no code change
