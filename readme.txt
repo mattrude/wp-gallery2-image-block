@@ -1,7 +1,7 @@
 === Gallery2 Image Block ===
 Contributors: mattrude
 Author URI: http://mattrude.com/
-Plugin URI: http://mattrude.com/plugins/wp-gallery2-image-block/
+Plugin URI: http://mattrude.com/projects/wp-gallery2-image-block/
 Donate link: http://mattrude.com/donate/
 Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
@@ -21,7 +21,6 @@ All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/G
 As of version 0.5, wp-gallery2-image-block has full localization support, and ships with 5 languages besides English. Please contact me if you would like to translate it into more langages, I would love for as meny peaple as posible to be able to use this plugin.
 
 = Fully Translated into: =
-
 * Dutch (0.5.1)
 * French
 * English
@@ -29,7 +28,7 @@ As of version 0.5, wp-gallery2-image-block has full localization support, and sh
 * Portuguese (0.5.1)
 * Spanish
   
-*Note:* This widget was written using [lib_curl()](http://www.php.net/curl) to avoid url_fopen issues.
+*Note:* This widget was written using [wp_http](http://planetozh.com/blog/2009/08/how-to-make-http-requests-with-wordpress/) to increase compatibility with more sites (version 0.6).
 	
 == Installation ==
 
@@ -37,7 +36,7 @@ Extract the zip file and just drop the contents in the `wp-content/plugins/` dir
 
 == Frequently Asked Questions ==
 
-You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/bbpress/forum/wp-gallery2-image-block).
+You may ask questions or ask for support form the [Gallery2 Image Block Forums](http://mattrude.com/forums/forum/wp-gallery2-image-block).
 
 = Q: Will this plugin work without Gallery2? =
 A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
@@ -46,6 +45,9 @@ A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
 A: Sorry, this plugin will only work in the wiget sidebar.
 
 == Changelog ==
+
+= Version: 0.6 =
+* Switched from using [lib_curl()](http://www.php.net/curl) to [wp_http](http://planetozh.com/blog/2009/08/how-to-make-http-requests-with-wordpress/)
 
 = Version: 0.5.2 =
 * Tested with wordpress 2.8.3 & 2.8.4 - no code change
