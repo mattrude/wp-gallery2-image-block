@@ -6,15 +6,15 @@ Donate link: http://mattrude.com/donate/
 Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 0.6
+Stable tag: 0.6.1
 	
-Widget to display your Gallery 2 Image Block on your Wordpress sidebar
+Widget to display your Gallery 2 Image Block on your WordPress sidebar
 
 == Description ==
 
-This plugin will allow you to put one of the meny [Gallery2](http://gallery.menalto.com/) Image Blocks on your Wordpress site.  You are required to have a running Gallery2 install to use this plugin.
+This plugin will allow you to put one of the meny [Gallery2](http://gallery.menalto.com/) Image Blocks on your WordPress site.  You are required to have a running Gallery2 install to use this plugin.
   
-This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschierers.net/blog) [Gallery2 Image Block Plugin](http://wordpress.org/extend/plugins/gallery2-image-block-widget) 0.1.4.  This rewrite uses the new Wordpress 2.8 Widget API, so is only compatable with wordpress 2.8+.
+This is a complete rewrite of [Chris Schierer (aka Lentil)](http://www.theschierers.net/blog) [Gallery2 Image Block Plugin](http://wordpress.org/extend/plugins/gallery2-image-block-widget) 0.1.4.  This rewrite uses the new WordPress 2.8 Widget API, so is only compatable with wordpress 2.8+.
   
 All options described in the [Gallery 2 Image Block](http://codex.gallery2.org/Gallery2:Modules:imageblock) documentation are included. User configuration of Image Block options are available in the Widget configuration panel.  Blank (empty) options use the Gallery2 defaults.  
 
@@ -25,6 +25,8 @@ As of version 0.5, wp-gallery2-image-block has full localization support, and sh
 * French
 * English
 * German
+* Italian (0.6.1)
+* Polish (0.6.1)
 * Portuguese (0.5.1)
 * Spanish
   
@@ -46,6 +48,11 @@ A: Sorry, this plugin will only work in the wiget sidebar.
 
 == Changelog ==
 
+= Version 0.6.1 =
+* Tested with WordPress 2.8.5 - no code changes
+* Added Italian Translation
+* Added Polish Translation
+
 = Version: 0.6 =
 * Switched from using [lib_curl()](http://www.php.net/curl) to [wp_http](http://planetozh.com/blog/2009/08/how-to-make-http-requests-with-wordpress/)
 
@@ -55,7 +62,7 @@ A: Sorry, this plugin will only work in the wiget sidebar.
 * Updated README
 
 = Version: 0.5.1 =
-* Tested with Wordpress 2.8.2 - no code changes
+* Tested with WordPress 2.8.2 - no code changes
 * Updated POT file do to typo
 * Added Dutch translation
 * Added Portuguese translation
