@@ -1,0 +1,68 @@
+# Gallery2 Image Block
+# Copyright (C) 2009 Matt Rude
+# This file is distributed under the GPLv2 license.
+# Matt Rude, matt@mattrude.com, 2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-gallery2-image-block\n"
+"POT-Creation-Date: 2009-07-18 23:18+0000\n"
+"PO-Revision-Date: 2009-10-21 19:34-0600\n"
+"Last-Translator: Matt Rude <matt@mattrude.com>\n"
+"Language-Team: Matt Rude <matt@mattrude.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+
+#. #-#-#-#-#  plugin.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Plugin Name of an extension
+#: wp-gallery2-image-block.php:15
+msgid "Gallery2 Image Block"
+msgstr "Galeria2 imagem bloco"
+
+#: wp-gallery2-image-block.php:16
+msgid "Gallery2 Image Block for WordPress"
+msgstr "Galeria2 imagem bloco para WordPress"
+
+#: wp-gallery2-image-block.php:74
+msgid "Title"
+msgstr "Título"
+
+#: wp-gallery2-image-block.php:76
+msgid "Gallery2 URL"
+msgstr "Galeria2 URL"
+
+#: wp-gallery2-image-block.php:78
+msgid "Image Block to use"
+msgstr "Imagem Bloquear a utilização"
+
+#: wp-gallery2-image-block.php:80
+msgid "Fields to display"
+msgstr "Campos para exibição"
+
+#: wp-gallery2-image-block.php:82
+msgid "Item ID"
+msgstr "Item identidade"
+
+#: wp-gallery2-image-block.php:84
+msgid "Max Size"
+msgstr "tamanho max"
+
+#: wp-gallery2-image-block.php:86
+msgid "Exact Size"
+msgstr "Tamanho exato"
+
+#: wp-gallery2-image-block.php:88
+msgid "Link Images To"
+msgstr "Link para imagens"
+
+#: wp-gallery2-image-block.php:90
+msgid "Open above Links in"
+msgstr "Abrir links acima, em "
+
+#. Description of an extension
+msgid "Display a Gallery2 Image Block on your WordPress site, this is requires a connection to a Gallery2 install."
+msgstr "Mostrar uma imagem Galeria2 bloco WordPress no seu site, este é necessária uma ligação a uma Galeria2 instalar."
+
