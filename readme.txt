@@ -47,10 +47,7 @@ A: Sorry No, [Gallery2](http://gallery.menalto.com/) is required.
 A: Sorry, this plugin will only work in the wiget sidebar.
 
 = Q: Recived "SECURITY VIOLATION The action you attempted is not permitted" error on page load =
-A: make sure the Gallery2 plugin "Image Block" is installed and active. You
-should be able to see the random image by going to:
-''http://--gallery2url--/main.php?g2_view=imageblock.External''
-Where –gallery2url– is the value you put in the widget’s URL field. You should
+A: make sure the Gallery2 plugin "Image Block" is installed and active on your Gallery2 install. You should be able to see the random image by going to: `http://--gallery2url--/main.php?g2_view=imageblock.External` Where –gallery2url– is the value you put in the widget’s URL field. You should
 see the random image with the default options.
 
 == Changelog ==
