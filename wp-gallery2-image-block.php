@@ -93,6 +93,27 @@ class Gallery2_Block extends WP_Widget {
   
 }
 
+function gallery2_block_shortcode($atts) {
+    extract(shortcode_atts(array(
+      "gallery_url" => 'http://localhost/gallery',
+      "gallery_block" => 'random',
+      "gallery_show" => '',
+      "gallery_itemid" => '',
+      "gallery_maxsize" => '',
+      "gallery_exactsize" => '',
+      "gallery_link" => '',
+      "gallery_linktarget" => '',
+    ), $atts));
+
+    //Grab the image and meta data from the Gallery 2 install
+    $request = new WP_Http;
+    $result = $request->request( $gallery_url . '/main.php?g2_view=imageblock.External&g2_blocks=' . $gallery_block . '&g2_show=' . $gallery_show . '&g2_itemId=' . $gallery_itemid . '&g2_maxSize=' . $gallery_maxsize . '&g2_exactSize=' . $gallery_exactsize . '&g2_link=' . $gallery_link . '&g2_linkTarget=' . $gallery_linktarget );
+    $file_contents = $result['body'];
+    return $file_contents;
+}
+
+add_shortcode('g2ib', 'gallery2_block_shortcode');
+
 add_action('widgets_init', 'widget_gallery2_init');
 function widget_gallery2_init() {
         register_widget('Gallery2_Block');
