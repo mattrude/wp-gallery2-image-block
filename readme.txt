@@ -5,8 +5,8 @@ Plugin URI: http://mattrude.com/projects/wp-gallery2-image-block/
 Donate link: http://mattrude.com/donate/
 Tags: Gallery2, images, image block, plugin, widget
 Requires at least: 2.8
-Tested up to: 2.8.6
-Stable tag: 0.6.6
+Tested up to: 2.9
+Stable tag: 0.6.3
 	
 Widget to display your Gallery 2 Image Block on your WordPress sidebar
 
@@ -51,6 +51,9 @@ A: make sure the Gallery2 plugin "Image Block" is installed and active on your G
 see the random image with the default options.
 
 == Changelog ==
+
+= Version 0.6.3 =
+* Tested with WordPress 2.9 - no code changes
 
 = Version 0.6.2 =
 * Tested with WordPress 2.8.6 - no code changes

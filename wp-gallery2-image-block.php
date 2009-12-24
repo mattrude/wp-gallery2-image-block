@@ -3,7 +3,7 @@
 Plugin Name: Gallery2 Image Block
 Plugin URI: http://mattrude.com/projects/wp-gallery2-image-block/
 Description: Display a Gallery2 Image Block on your WordPress site, this is requires a connection to a Gallery2 install.
-Version: 0.6.2
+Version: 0.6.3
 Author: Matt Rude
 Author URI: http://mattrude.com/
 */
